@@ -4,6 +4,7 @@ import { Redirect, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
+import Loader from '../components/Loader';
 import React from 'react';
 import 'react-native-url-polyfill/auto';
 import { useGlobalContext } from "../context/GlobalProvider";
@@ -15,6 +16,7 @@ const Welcome = () => {
 
   return (
     <SafeAreaView className='bg-primary h-full'>
+      <Loader isLoading={loading} />
       <ScrollView contentContainerStyle={{ height: '100%' }} >
         <View className='w-full justify-center items-center h-full px-4'>
           <Image source={images.logo} className='w-[130px] h-[84px]' resizeMode='contain' />

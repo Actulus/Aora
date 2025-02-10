@@ -35,8 +35,8 @@ export default function RootLayout() {
   if (!fontsLoaded && !error) return null;
 
   return (
-    <GlobalProvider>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme} >
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme} >
+      <GlobalProvider>
         <Stack screenOptions={{ headerShown: false }} >
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
@@ -45,7 +45,7 @@ export default function RootLayout() {
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
-      </ThemeProvider>
-    </GlobalProvider>
+      </GlobalProvider>
+    </ThemeProvider>
   );
 }
