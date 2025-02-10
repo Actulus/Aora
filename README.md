@@ -1,4 +1,10 @@
-Full Stack React Native app based on [aora](https://github.com/adrianhajdin/aora), JavaScript Mastery's [tutorial video](https://www.youtube.com/watch?v=ZBCUegTZF7M).
+## Full Stack React Native app based on [aora](https://github.com/adrianhajdin/aora), JavaScript Mastery's [tutorial video](https://www.youtube.com/watch?v=ZBCUegTZF7M).
+
+# ❗️ Note
+
+This project uses [expo-video](https://docs.expo.dev/versions/latest/sdk/video/) instead of [expo-av](https://docs.expo.dev/versions/latest/sdk/video-av/) thus some parts were modified in order for it to work. Currently expo-video works with mp4 video files only.
+
+It also uses [Appwrite](https://appwrite.io/docs) but you can use other database managers as well. 
 
 # Welcome to your Expo app 👋
 
